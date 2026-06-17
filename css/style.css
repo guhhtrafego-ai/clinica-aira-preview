@@ -603,7 +603,7 @@ address { font-style: normal; }
 
 .section--differentials {
   position: relative;
-  background-image: url('../background-clinica.webp');
+  background-image: url('../assets/images/background-clinica.webp');
   background-size: cover;
   background-position: center 30%;
   background-attachment: fixed;
@@ -858,7 +858,7 @@ address { font-style: normal; }
 
 
 /* ---- Imagens DEPOIS ---- */
-.proc-card__img--1   { background-image: url('../harmonizacao-depois.webp'); background-size: cover; background-position: center top; }
+.proc-card__img--1   { background-image: url('../assets/images/harmonizacao-depois.webp'); background-size: cover; background-position: center top; }
 .proc-card__img--2 { background: linear-gradient(135deg, #E8E2D9 0%, #DDD5C9 100%); }
 .proc-card__img--3 { background: linear-gradient(135deg, #C5B6A2 0%, #B5A690 100%); }
 .proc-card__img--4 { background: linear-gradient(135deg, #E8E2D9 0%, #DDD5C9 100%); }
@@ -869,7 +869,7 @@ address { font-style: normal; }
 .proc-card__img--9 { background: linear-gradient(135deg, #DDD5C9 0%, #A89578 100%); }
 
 /* ---- Imagens ANTES (placeholder) ---- */
-.proc-card__img--1-b { background-image: url('../harmonizacao-antes.webp'); background-size: cover; background-position: center top; }
+.proc-card__img--1-b { background-image: url('../assets/images/harmonizacao-antes.webp'); background-size: cover; background-position: center top; }
 .proc-card__img--2-b { background: linear-gradient(135deg, #D2CCBF 0%, #C4BAB0 100%); }
 .proc-card__img--3-b { background: linear-gradient(135deg, #B8A993 0%, #A89680 100%); }
 .proc-card__img--4-b { background: linear-gradient(135deg, #D2CCBF 0%, #C4BAB0 100%); }
