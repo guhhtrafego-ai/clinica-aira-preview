@@ -607,6 +607,7 @@ address { font-style: normal; }
   background-size: cover;
   background-position: center 30%;
   background-attachment: fixed;
+  scroll-margin-top: var(--header-height);
 }
 
 .section--differentials::before {
@@ -787,7 +788,7 @@ address { font-style: normal; }
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.13);
-  padding: 40px 32px;
+  padding: 28px 32px;
   border-radius: var(--radius-md);
   transition: all var(--transition);
 }
