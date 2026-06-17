@@ -162,6 +162,7 @@ address { font-style: normal; }
 }
 
 .btn--soft {
+  position: relative;
   background: var(--color-cream);
   color: var(--color-text-muted);
   border: none;
@@ -182,6 +183,7 @@ address { font-style: normal; }
     inset 0 3px 5px rgba(44, 40, 37, 0.10),
     inset 0 1px 2px rgba(255, 255, 255, 0.40);
 }
+
 
 .btn--sm {
   padding: 12px 24px;
@@ -501,6 +503,85 @@ address { font-style: normal; }
 .hero__trust svg {
   color: var(--color-champagne);
   flex-shrink: 0;
+}
+
+
+
+
+@keyframes floatBadge {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+.hero__badges {
+  position: absolute;
+  top: var(--header-height);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__badge {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: var(--radius-full);
+  padding: 8px 18px;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  white-space: nowrap;
+  box-shadow:
+    0 4px 14px rgba(44, 40, 37, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.30);
+  animation: floatBadge 5s ease-in-out infinite;
+}
+
+/* Harmonização — esquerdo, altura do rosto */
+/* Harmonização — centro superior, entre as cabeças */
+.hero__badge--1 {
+  left: 50%;
+  top: 12%;
+  animation-delay: 0s;
+}
+
+/* Bioestimuladores — centro, altura do busto */
+.hero__badge--2 {
+  left: 50%;
+  top: 44%;
+  animation-delay: 0.8s;
+}
+
+/* Colágeno — centro inferior, entre as modelos */
+.hero__badge--3 {
+  left: 50%;
+  bottom: 22%;
+  animation: floatBadgeCenter 5s ease-in-out 1.6s infinite;
+}
+
+/* Skinbooster — direito, altura do rosto da modelo */
+.hero__badge--4 {
+  right: 4%;
+  top: 40%;
+  animation-delay: 2.4s;
+}
+
+/* Microagulhamento — direito, altura do meio */
+.hero__badge--5 {
+  right: 4%;
+  top: 72%;
+  animation-delay: 3.2s;
+}
+
+@keyframes floatBadgeCenter {
+  0%, 100% { transform: translateX(-50%) translateY(0px); }
+  50%       { transform: translateX(-50%) translateY(-10px); }
 }
 
 
@@ -1525,6 +1606,45 @@ address { font-style: normal; }
     justify-content: center;
   }
 
+  .hero__badges {
+    top: var(--header-height);
+    right: 0;
+    left: 0;
+    bottom: auto;
+    height: 85vw;
+    max-height: 520px;
+  }
+
+  .hero__badge {
+    font-size: 0.50rem;
+    padding: 4px 10px;
+    letter-spacing: 0.09em;
+  }
+
+  .hero__badge--1 {
+    left: 4%;
+    top: 18%;
+  }
+
+  .hero__badge--2 {
+    left: 4%;
+    top: 52%;
+  }
+
+  .hero__badge--3 {
+    bottom: 26%;
+  }
+
+  .hero__badge--4 {
+    right: 4%;
+    top: 36%;
+  }
+
+  .hero__badge--5 {
+    right: 4%;
+    top: 64%;
+  }
+
   .section {
     padding: 72px 0;
   }
@@ -1645,6 +1765,7 @@ address { font-style: normal; }
   .hero__actions .btn {
     width: 100%;
   }
+
 
   .hero__trust {
     flex-direction: column;
