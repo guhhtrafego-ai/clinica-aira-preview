@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica Aira — Estética avançada em São Paulo. Protocolos personalizados com técnica, segurança e naturalidade. Agende sua avaliação.">
+  <title>Clínica Aira | Estética Avançada em São Paulo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__logo" aria-label="Clínica Aira — Início">
+        <img src="logo-claro.svg" alt="" class="header__logo-img header__logo-img--claro" width="56" height="56" aria-hidden="true">
+        <img src="logo-escuro.svg" alt="Clínica Aira" class="header__logo-img header__logo-img--escuro" width="56" height="56">
+      </a>
+      <nav class="header__nav" id="nav" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#procedimentos" class="nav-link">Procedimentos</a></li>
+          <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+          <li><a href="#especialistas" class="nav-link">Especialistas</a></li>
+          <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+          <li><a href="#experiencia" class="nav-link">Experiência Aira</a></li>
+          <li><a href="#localizacao" class="nav-link">Contato</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true">
+              Mais
+              <svg class="nav-dropdown__chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="nav-dropdown__menu" role="menu">
+              <a href="#sobre" class="nav-dropdown__item" role="menuitem">Sobre</a>
+              <div class="nav-dropdown__divider"></div>
+              <a href="#" class="nav-dropdown__item nav-dropdown__item--soon" role="menuitem" tabindex="-1">Blog <span class="soon-badge">em breve</span></a>
+              <a href="#" class="nav-dropdown__item nav-dropdown__item--soon" role="menuitem" tabindex="-1">FAQ <span class="soon-badge">em breve</span></a>
+              <a href="#" class="nav-dropdown__item nav-dropdown__item--soon" role="menuitem" tabindex="-1">Método AIRA <span class="soon-badge">em breve</span></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="btn btn--primary btn--sm header__cta" target="_blank" rel="noopener noreferrer">
+        Agendar avaliação
+      </a>
+      <button class="header__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg">
+        <picture class="hero__picture">
+          <source media="(max-width: 768px)" srcset="background-mobile.webp" type="image/webp">
+          <img src="background.webp" alt="Profissionais da Clínica Aira em ambiente de estética avançada" class="hero__img">
+        </picture>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Estética avançada · São Paulo</p>
+          <h1 class="hero__title">Estética avançada com autoridade, naturalidade e cuidado em cada detalhe.</h1>
+          <p class="hero__subtitle">Protocolos personalizados para realçar sua beleza, valorizar sua autoestima e entregar uma experiência estética segura, sofisticada e natural.</p>
+          <div class="hero__actions">
+            <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Agendar avaliação</a>
+            <a href="#procedimentos" class="btn btn--ghost">Conhecer procedimentos</a>
+          </div>
+          <ul class="hero__trust">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Atendimento personalizado
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Procedimentos seguros
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              Resultados naturais
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero__arch" aria-hidden="true"></div>
+    </section>
+
+    <!-- PROCEDIMENTOS -->
+    <section class="section section--procedures" id="procedimentos">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Nossos procedimentos</p>
+          <h2 class="section-title">Protocolos pensados para realçar, não para transformar.</h2>
+          <p class="section-desc">Cada procedimento é indicado após avaliação individual. Conheça as principais áreas de atuação da Clínica Aira.</p>
+        </div>
+        <div class="procedures-grid">
+
+          <article class="proc-card reveal">
+            <div class="proc-card__arch">
+              <div class="ba-slider" data-slider>
+                <div class="ba-slider__pane ba-slider__before">
+                  <div class="proc-card__img proc-card__img--1-b"></div>
+                  <span class="ba-label">Antes</span>
+                </div>
+                <div class="ba-slider__pane ba-slider__after">
+                  <div class="proc-card__img proc-card__img--1"></div>
+                  <span class="ba-label ba-label--right">Depois</span>
+                </div>
+                <div class="ba-slider__handle">
+                  <div class="ba-slider__line"></div>
+                  <div class="ba-slider__btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="proc-card__body">
+              <h3>Harmonização facial</h3>
+              <p class="proc-card__benefit">Equilíbrio e proporção com naturalidade</p>
+              <p>Planejamento facial personalizado para harmonizar traços, respeitando sua identidade e estrutura óssea.</p>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="proc-card__link" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="proc-card reveal">
+            <div class="proc-card__arch">
+              <div class="ba-slider" data-slider>
+                <div class="ba-slider__pane ba-slider__before">
+                  <div class="proc-card__img proc-card__img--2-b"></div>
+                  <span class="ba-label">Antes</span>
+                </div>
+                <div class="ba-slider__pane ba-slider__after">
+                  <div class="proc-card__img proc-card__img--2"></div>
+                  <span class="ba-label ba-label--right">Depois</span>
+                </div>
+                <div class="ba-slider__handle">
+                  <div class="ba-slider__line"></div>
+                  <div class="ba-slider__btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="proc-card__body">
+              <h3>Toxina botulínica</h3>
+              <p class="proc-card__benefit">Suavização de linhas de expressão</p>
+              <p>Aplicação precisa para suavizar marcas dinâmicas, preservando a naturalidade da expressão facial.</p>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="proc-card__link" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="proc-card reveal">
+            <div class="proc-card__arch">
+              <div class="ba-slider" data-slider>
+                <div class="ba-slider__pane ba-slider__before">
+                  <div class="proc-card__img proc-card__img--3-b"></div>
+                  <span class="ba-label">Antes</span>
+                </div>
+                <div class="ba-slider__pane ba-slider__after">
+                  <div class="proc-card__img proc-card__img--3"></div>
+                  <span class="ba-label ba-label--right">Depois</span>
+                </div>
+                <div class="ba-slider__handle">
+                  <div class="ba-slider__line"></div>
+                  <div class="ba-slider__btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="proc-card__body">
+              <h3>Preenchimento facial</h3>
+              <p class="proc-card__benefit">Volume e contorno com elegância</p>
+              <p>Reposição e modelagem com técnica refinada para restaurar volume e definir contornos de forma sutil.</p>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="proc-card__link" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="proc-card reveal">
+            <div class="proc-card__arch">
+              <div class="ba-slider" data-slider>
+                <div class="ba-slider__pane ba-slider__before">
+                  <div class="proc-card__img proc-card__img--4-b"></div>
+                  <span class="ba-label">Antes</span>
+                </div>
+                <div class="ba-slider__pane ba-slider__after">
+                  <div class="proc-card__img proc-card__img--4"></div>
+                  <span class="ba-label ba-label--right">Depois</span>
+                </div>
+                <div class="ba-slider__handle">
+                  <div class="ba-slider__line"></div>
+                  <div class="ba-slider__btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="proc-card__body">
+              <h3>Bioestimuladores de colágeno</h3>
+              <p class="proc-card__benefit">Firmeza e qualidade da pele</p>
+              <p>Estímulo natural de colágeno para melhorar firmeza, textura e viço da pele ao longo do tempo.</p>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="proc-card__link" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="proc-card reveal">
+            <div class="proc-card__arch">
+              <div class="ba-slider" data-slider>
+                <div class="ba-slider__pane ba-slider__before">
+                  <div class="proc-card__img proc-card__img--5-b"></div>
+                  <span class="ba-label">Antes</span>
+                </div>
+                <div class="ba-slider__pane ba-slider__after">
+                  <div class="proc-card__img proc-card__img--5"></div>
+                  <span class="ba-label ba-label--right">Depois</span>
+                </div>
+                <div class="ba-slider__handle">
+                  <div class="ba-slider__line"></div>
+                  <div class="ba-slider__btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="proc-card__body">
+              <h3>Skinbooster</h3>
+              <p class="proc-card__benefit">Hidratação profunda e luminosidade</p>
+              <p>Tratamento injetável para revitalizar a pele, melhorar hidratação e conferir aspecto saudável.</p>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="proc-card__link" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="proc-card reveal">
+            <div class="proc-card__arch">
+              <div class="ba-slider" data-slider>
+                <div class="ba-slider__pane ba-slider__before">
+                  <div class="proc-card__img proc-card__img--6-b"></div>
+                  <span class="ba-label">Antes</span>
+                </div>
+                <div class="ba-slider__pane ba-slider__after">
+                  <div class="proc-card__img proc-card__img--6"></div>
+                  <span class="ba-label ba-label--right">Depois</span>
+                </div>
+                <div class="ba-slider__handle">
+                  <div class="ba-slider__line"></div>
+                  <div class="ba-slider__btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="proc-card__body">
+              <h3>Limpeza de pele</h3>
+              <p class="proc-card__benefit">Pele limpa, renovada e equilibrada</p>
+              <p>Protocolo profundo de limpeza para remover impurezas e preparar a pele para outros tratamentos.</p>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="proc-card__link" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="proc-card reveal">
+            <div class="proc-card__arch">
+              <div class="ba-slider" data-slider>
+                <div class="ba-slider__pane ba-slider__before">
+                  <div class="proc-card__img proc-card__img--7-b"></div>
+                  <span class="ba-label">Antes</span>
+                </div>
+                <div class="ba-slider__pane ba-slider__after">
+                  <div class="proc-card__img proc-card__img--7"></div>
+                  <span class="ba-label ba-label--right">Depois</span>
+                </div>
+                <div class="ba-slider__handle">
+                  <div class="ba-slider__line"></div>
+                  <div class="ba-slider__btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="proc-card__body">
+              <h3>Peelings</h3>
+              <p class="proc-card__benefit">Renovação celular e uniformidade</p>
+              <p>Esfoliação controlada para renovar a pele, suavizar manchas e melhorar textura com segurança.</p>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="proc-card__link" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="proc-card reveal">
+            <div class="proc-card__arch">
+              <div class="ba-slider" data-slider>
+                <div class="ba-slider__pane ba-slider__before">
+                  <div class="proc-card__img proc-card__img--8-b"></div>
+                  <span class="ba-label">Antes</span>
+                </div>
+                <div class="ba-slider__pane ba-slider__after">
+                  <div class="proc-card__img proc-card__img--8"></div>
+                  <span class="ba-label ba-label--right">Depois</span>
+                </div>
+                <div class="ba-slider__handle">
+                  <div class="ba-slider__line"></div>
+                  <div class="ba-slider__btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="proc-card__body">
+              <h3>Microagulhamento</h3>
+              <p class="proc-card__benefit">Estímulo de colágeno e regeneração</p>
+              <p>Técnica de indução percutânea para melhorar cicatrizes, poros e qualidade geral da pele.</p>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="proc-card__link" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="proc-card reveal">
+            <div class="proc-card__arch">
+              <div class="ba-slider" data-slider>
+                <div class="ba-slider__pane ba-slider__before">
+                  <div class="proc-card__img proc-card__img--9-b"></div>
+                  <span class="ba-label">Antes</span>
+                </div>
+                <div class="ba-slider__pane ba-slider__after">
+                  <div class="proc-card__img proc-card__img--9"></div>
+                  <span class="ba-label ba-label--right">Depois</span>
+                </div>
+                <div class="ba-slider__handle">
+                  <div class="ba-slider__line"></div>
+                  <div class="ba-slider__btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M9 8l-4 4 4 4"/><path d="M15 8l4 4-4 4"/></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="proc-card__body">
+              <h3>Tratamentos corporais</h3>
+              <p class="proc-card__benefit">Contorno e bem-estar integrado</p>
+              <p>Protocolos corporais personalizados para modelagem, firmeza e cuidado com a silhueta.</p>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="proc-card__link" target="_blank" rel="noopener noreferrer">Saiba mais <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section section--differentials" id="diferenciais">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Por que a Aira</p>
+          <h2 class="section-title">Cuidado em cada etapa da sua jornada estética.</h2>
+        </div>
+        <div class="differentials-grid">
+          <article class="diff-card reveal">
+            <div class="diff-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Avaliação individualizada</h3>
+            <p>Cada paciente é única. Sua avaliação considera histórico, pele, estrutura facial e expectativas reais.</p>
+          </article>
+          <article class="diff-card reveal">
+            <div class="diff-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3>Protocolos personalizados</h3>
+            <p>Planejamento estético exclusivo, sem fórmulas prontas. Cada protocolo respeita sua individualidade.</p>
+          </article>
+          <article class="diff-card reveal">
+            <div class="diff-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Segurança em primeiro lugar</h3>
+            <p>Produtos de qualidade, técnicas validadas e ambiente preparado para sua tranquilidade.</p>
+          </article>
+          <article class="diff-card reveal">
+            <div class="diff-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Técnicas modernas</h3>
+            <p>Estética avançada com equipamentos e abordagens atualizadas para resultados refinados.</p>
+          </article>
+          <article class="diff-card reveal">
+            <div class="diff-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Ambiente acolhedor</h3>
+            <p>Espaço clean, iluminação suave e atmosfera pensada para você se sentir em casa.</p>
+          </article>
+          <article class="diff-card reveal">
+            <div class="diff-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Resultados naturais</h3>
+            <p>Realçamos sua beleza com equilíbrio, sem exageros, sem artificialidade.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFISSIONAIS -->
+    <section class="section section--team" id="especialistas">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Nossa equipe</p>
+          <h2 class="section-title">Especialistas em realçar a sua beleza com equilíbrio.</h2>
+          <p class="section-desc">À frente da Clínica Aira, profissionais que unem conhecimento técnico, olhar estético e atendimento humanizado para criar resultados que respeitam a individualidade de cada paciente.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-card__photo team-card__photo--1"></div>
+            <div class="team-card__info">
+              <h3>Dra. [Nome]</h3>
+              <p class="team-card__role">Fundadora · Estética Avançada</p>
+              <p class="team-card__bio">Especialista em harmonização facial e protocolos personalizados, com formação em estética avançada e anos de experiência em resultados naturais.</p>
+              <ul class="team-card__creds">
+                <li>CRM/CRBM [número]</li>
+                <li>Pós-graduação em Estética Avançada</li>
+                <li>Especialização em Harmonização Facial</li>
+              </ul>
+            </div>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-card__photo team-card__photo--2"></div>
+            <div class="team-card__info">
+              <h3>Dra. [Nome]</h3>
+              <p class="team-card__role">Estética Facial e Corporal</p>
+              <p class="team-card__bio">Profissional dedicada a tratamentos de pele e rejuvenescimento, com abordagem cuidadosa e foco em resultados elegantes e duradouros.</p>
+              <ul class="team-card__creds">
+                <li>CRM/CRBM [número]</li>
+                <li>Especialização em Dermatologia Estética</li>
+                <li>Certificação em Bioestimuladores</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section section--testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Depoimentos</p>
+          <h2 class="section-title section-title--center">O que nossas pacientes dizem sobre a experiência Aira.</h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <blockquote>
+              <p>"Me senti ouvida desde o primeiro momento. A avaliação foi detalhada, sem pressa, e o resultado ficou exatamente como eu esperava! natural e elegante."</p>
+            </blockquote>
+            <footer>
+              <strong>Mariana S.</strong>
+              <span>Harmonização facial</span>
+            </footer>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <blockquote>
+              <p>"O ambiente é lindo e acolhedor. Você percebe o cuidado em cada detalhe, desde a recepção até o pós-procedimento. Recomendo de olhos fechados."</p>
+            </blockquote>
+            <footer>
+              <strong>Camila R.</strong>
+              <span>Protocolo personalizado</span>
+            </footer>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <blockquote>
+              <p>"Já passei por outras clínicas, mas na Aira encontrei algo diferente: profissionalismo com humanização. Me senti segura em cada etapa."</p>
+            </blockquote>
+            <footer>
+              <strong>Juliana A.</strong>
+              <span>Bioestimuladores</span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA AIRA -->
+    <section class="section section--experience" id="experiencia">
+      <div class="container experience">
+        <div class="experience__text reveal">
+          <p class="eyebrow">A experiência Aira</p>
+          <h2 class="section-title">Do primeiro contato ao resultado, cada detalhe importa.</h2>
+          <p>Na Clínica Aira, o cuidado vai além da técnica. O ambiente, a escuta, o planejamento e o acompanhamento fazem parte de uma experiência criada para que você se sinta segura, acolhida e confiante em cada etapa.</p>
+          <ul class="experience__steps">
+            <li><span>01</span> Primeiro contato acolhedor</li>
+            <li><span>02</span> Avaliação detalhada e escuta ativa</li>
+            <li><span>03</span> Planejamento estético personalizado</li>
+            <li><span>04</span> Procedimento com técnica e cuidado</li>
+            <li><span>05</span> Acompanhamento pós-tratamento</li>
+          </ul>
+        </div>
+        <div class="experience__visual reveal">
+          <div class="experience__circle">
+            <div class="experience__img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="section section--location" id="localizacao">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="eyebrow">Como nos encontrar</p>
+          <h2 class="section-title">Venha nos visitar.</h2>
+        </div>
+        <div class="location-grid reveal">
+          <div class="location-map">
+            <iframe
+              src="https://maps.google.com/maps?q=Rua%20Paracatu%2C%20309%2C%20Sa%C3%BAde%2C%20S%C3%A3o%20Paulo%2C%20SP%2C%2004302-020&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização da Clínica Aira">
+            </iframe>
+          </div>
+          <div class="location-info">
+            <div class="location-info__block">
+              <h3>Endereço</h3>
+              <address>
+                Rua Paracatu, 309<br>
+                Saúde — São Paulo, SP<br>
+                CEP 04302-020
+              </address>
+              <a href="https://maps.google.com/maps?q=Rua+Paracatu,+309,+Saúde,+São+Paulo,+SP" target="_blank" rel="noopener noreferrer" class="location-info__link">
+                Abrir no Google Maps <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="location-info__block">
+              <h3>Horário de funcionamento</h3>
+              <ul class="location-hours">
+                <li><span>Segunda a sábado</span><strong>9h às 19h</strong></li>
+                <li><span>Domingo</span><strong>Fechado</strong></li>
+              </ul>
+            </div>
+            <div class="location-info__block">
+              <h3>Contato</h3>
+              <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                Agendar pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSICIONAMENTO -->
+    <section class="section section--positioning" id="sobre">
+      <div class="container">
+        <div class="positioning reveal">
+          <div class="positioning__arch" aria-hidden="true"></div>
+          <p class="eyebrow eyebrow--center">Nossa essência</p>
+          <h2 class="section-title section-title--center">Autoridade se constrói nos detalhes.</h2>
+          <p class="positioning__text">Na Clínica Aira, cada atendimento é pensado de forma individual. Antes de qualquer procedimento, entendemos sua pele, seus objetivos e sua essência para construir um plano estético personalizado, com técnica, segurança e naturalidade.</p>
+          <p class="positioning__highlight">Não oferecemos procedimentos prontos. Criamos planejamento estético sob medida para você.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section section--cta" id="contato">
+      <div class="container">
+        <div class="cta-block reveal">
+          <div class="cta-block__arch" aria-hidden="true"></div>
+          <p class="eyebrow eyebrow--light">Sua jornada começa aqui</p>
+          <h2 class="cta-block__title">Pronta para viver uma experiência estética pensada para você?</h2>
+          <p class="cta-block__text">Agende sua avaliação e descubra quais protocolos fazem sentido para o seu momento, sua pele e seus objetivos.</p>
+          <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Agendar pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="logo-claro.svg" alt="Clínica Aira" class="footer__logo-img" width="64" height="64">
+        <p class="footer__tagline">Autoridade se constrói nos detalhes.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              (11) 99408-5118
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/clinicaaira" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @clinicaaira
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Localização</h4>
+        <address>
+          Rua Paracatu, 309<br>
+          Saúde — São Paulo, SP<br>
+          CEP 04302-020
+        </address>
+      </div>
+      <div class="footer__col">
+        <h4>Horário</h4>
+        <ul>
+          <li>Segunda a sábado: 9h às 19h</li>
+          <li>Domingo: fechado</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Links rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#procedimentos">Procedimentos</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2026 Clínica Aira. Todos os direitos reservados.</p>
+        <p class="footer__disclaimer">As informações deste site não substituem uma avaliação profissional individualizada.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flutuante -->
+  <a href="https://wa.me/5511994085118?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Agendar pelo WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
