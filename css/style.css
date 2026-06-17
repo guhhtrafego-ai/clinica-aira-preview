@@ -158,6 +158,29 @@ address { font-style: normal; }
 .btn--ghost:hover {
   border-color: var(--color-champagne);
   background: var(--color-cream);
+  transform: translateY(2px);
+}
+
+.btn--soft {
+  background: var(--color-cream);
+  color: var(--color-text-muted);
+  border: none;
+  letter-spacing: 0.05em;
+  box-shadow:
+    0 6px 0 rgba(44, 40, 37, 0.22),
+    0 10px 20px rgba(44, 40, 37, 0.15),
+    inset 0 2px 3px rgba(255, 255, 255, 0.55),
+    inset 0 -1px 2px rgba(44, 40, 37, 0.08);
+}
+
+.btn--soft:hover {
+  color: var(--color-text);
+  transform: translateY(4px);
+  box-shadow:
+    0 2px 0 rgba(44, 40, 37, 0.22),
+    0 6px 12px rgba(44, 40, 37, 0.12),
+    inset 0 3px 5px rgba(44, 40, 37, 0.10),
+    inset 0 1px 2px rgba(255, 255, 255, 0.40);
 }
 
 .btn--sm {
